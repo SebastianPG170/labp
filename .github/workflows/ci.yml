@@ -18,7 +18,9 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
-          cache: maven
+
+      - name: Ver archivos del repositorio
+        run: ls -la
 
       - name: Compilar proyecto con Maven
         run: mvn clean compile
